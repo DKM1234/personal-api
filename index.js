@@ -32,10 +32,12 @@ app.use(errorHandler)
 connectDb()
     .then(() => {
         console.log('Database Connection Succeeded.')
-        app.listen(8080,
-            () => console.log('API Started at => http://localhost:8080/api/users'))
+        // app.listen(8080,
+        //     () => console.log('API Started at => http://localhost:8080/api/users'))
     })
     .catch(err => console.log(err))
+
+    module.exports = app;
 
 // ...................................................................................................................
 
